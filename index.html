@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#e1c299",
+                    "on-primary-container": "#ff828a",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#34302c",
+                    "on-secondary-container": "#636451",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#fbf2ed",
+                    "on-surface-variant": "#584141",
+                    "inverse-on-surface": "#f8efea",
+                    "on-tertiary-container": "#c1a47d",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-tertiary-fixed": "#281801",
+                    "tertiary-container": "#4e3a1b",
+                    "tertiary": "#362408",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-background": "#1e1b18",
+                    "surface": "#fff8f5",
+                    "inverse-primary": "#ffb3b5",
+                    "surface-container-high": "#efe6e2",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#e1d8d4",
+                    "primary-container": "#800020",
+                    "tertiary-fixed": "#feddb3",
+                    "surface-tint": "#af2b3e",
+                    "surface-variant": "#e9e1dc",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#584324",
+                    "surface-bright": "#fff8f5",
+                    "outline-variant": "#e0bfbf",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#5e604d",
+                    "primary-fixed": "#ffdada",
+                    "on-surface": "#1e1b18",
+                    "background": "#fff8f5",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#474836",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#40000b",
+                    "outline": "#8c7071",
+                    "surface-container-highest": "#e9e1dc",
+                    "secondary-container": "#e1e1c9",
+                    "primary-fixed-dim": "#ffb3b5",
+                    "on-primary-fixed-variant": "#8e0f28",
+                    "primary": "#570013"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "sm": "16px",
+                    "gutter": "16px",
+                    "xl": "64px",
+                    "md": "24px",
+                    "base": "4px",
+                    "lg": "40px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "label-sm": ["Montserrat"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["20px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-[1440px] mx-auto">
+<div class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-primary-fixed-dim">
+                Ropita Rawson
+            </div>
+<div class="hidden md:flex gap-md items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Bebés</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Mujer</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Hombre</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Talles Especiales</a>
+</div>
+<div class="flex items-center gap-sm">
+<button class="text-primary p-2">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="grid grid-cols-6 h-full w-full">
+<div class="border-r border-primary-container/20"></div>
+<div class="border-r border-primary-container/20"></div>
+<div class="border-r border-primary-container/20"></div>
+<div class="border-r border-primary-container/20"></div>
+<div class="border-r border-primary-container/20"></div>
+</div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-xl items-center py-xl">
+<div class="flex flex-col items-center md:items-start text-center md:text-left space-y-md">
+<img alt="Ropita Rawson Logo" class="w-48 md:w-64 mb-sm drop-shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhZhyWv-dJcEfJakN0HKVA0hDZWYfv4u9poy-P4VGH1erNwV5lf-pyY9rsIYoQZOIgBNYqZt95a50W7fMWANKDalqPEdDmQIYnledHMlIBqWS6vZ5_wEISACohpFz6DGZ8qSlv__6jUm_3YorEnDUHFDUN57UDAQUgGPHteswRsJNnCapb7MXKa-iFsUKjKKbvhayKsPX07ZXZEGTLz31JM6OR0IZpnNm7-tKQQxoSCjRdnn7sLSvgapg9efUyNQecSwuX3xYGsSGK"/>
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">Ropita Rawson</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant max-w-lg">
+                        Indumentaria mixta - Talles desde el RN 0 al 7XL
+                    </p>
+<div class="pt-md">
+<a class="inline-flex items-center gap-sm bg-primary-container text-white px-lg py-sm rounded-lg font-headline-md text-headline-md shadow-lg hover:brightness-110 active:scale-95 transition-all duration-200" href="https://wa.me/2804361510" target="_blank">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            Contactar por WhatsApp
+                        </a>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/5 rounded-3xl blur-2xl group-hover:bg-primary-container/10 transition-all"></div>
+<img class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]" data-alt="A warm and inviting boutique interior shot, featuring racks of high-quality garments in a mix of soft neutrals and deep burgundy tones. The lighting is soft and golden, highlighting the textures of cotton and wool fabrics. The space is minimalist yet sophisticated, perfectly capturing the inclusive and welcoming spirit of the brand. Professional fashion photography style with shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOn8MtQyrH9ow3IH9iscueHv6nCpQxu7Ebfht1RbnxWkTmGlGTKC4X2XfdaZoxLnIMZniF8iZAeJMWLs8rnPZFp4kGZv2OFnXfTFBcXgqAjo560DRCOI5hjI6MkgtQDU5DgOY_ZhMmvD0Qfba65dbYp36ChFjX0i8o5dWElHY_-nwhByS66AmjM4QZWDJ3PVF1XLGoSlXq8JMUihGrnaMwoMIqC2ah-5-bysg228Fik7EXBifpG4LqhHV4gpuGJF5zQhOex33yakur"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-xl bg-surface px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto text-center space-y-md">
+<div class="inline-block px-4 py-1 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm">NUESTRA HISTORIA</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Moda para todos en el corazón de Rawson</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Ubicados en el centro de nuestra querida ciudad, en Ropita Rawson nos apasiona vestir a cada integrante de la familia. Creemos que la moda debe ser inclusiva, por eso nos especializamos en una amplia curva de talles que abraza todas las siluetas, desde los más pequeños recién nacidos hasta adultos con talles especiales hasta el 7XL.
+                </p>
+</div>
+</section>
+<!-- Categories Bento Grid -->
+<section class="py-xl bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xl text-center">Nuestras Colecciones</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter h-full">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up shot of soft, organic baby clothes in neutral beige and burgundy tones, neatly folded on a wooden surface. The lighting is bright and natural, creating a gentle and comforting mood. High-quality retail photography with a focus on fabric texture and artisanal quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqrxCgboAgt8AZ-eaO4dpMcY_dEY1uxtfQYn-xI5R7sUe0IoeXGB56dpaxD6GL3VCDhw2hUMWgYEwjIFDg16__pZ7_Dtw0sjoBbrMWLTXfzn0fWi0G98Z9PxhQufJYDx6UT1ts_7m14SIqe-hPHMHD4cc0C8_xD8rmlCURxBFKQZAr2a74x0l-HWH-mT09h4crBlJ_xqS9AXpMW3PJp9jfZejxaQkdzwaJCKZcFMsxTNGhNxyX1hnVWkWGdcRhnRu6YNfUj2q5NzoM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-lg">
+<h3 class="text-white font-headline-lg text-headline-lg">Ropa de Bebé</h3>
+<p class="text-white/80 font-body-md text-body-md">Desde RN hasta los primeros pasos.</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A stylish woman wearing a sophisticated burgundy sweater and neutral trousers, walking in a bright modern urban setting. The overall vibe is minimalist and professional. The soft lighting accentuates the elegant cut of the clothing. Editorial fashion photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwnxIL3--xbgTZ-cS8yc3wHOkZNvmtZMfv4AAFrmAUtgCH_1Soea76WAnY7OvOOV-mqhJdL2AX4F1Uwp0LrfnnJ_Jh-uIWYmn3_WMV4FwZ3KuhmFzaWGb2Yv_qUJKzpugCQmvszfZA014RDpZLSTvJD1Uaf6saQJ6GJ6LJgCiVE4OwX7bNJhlLKyStW8YeRpH26UgSDBNEOFjdKs2DGwTSeNOvajTkrJnQZrZM1krzou9nBQ0H-N5f3FOWFBaoMUA-j3sJ7G1MCEpo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-md">
+<h3 class="text-white font-headline-md text-headline-md">Mujer</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A well-dressed man in high-quality casual wear including a textured jacket and linen shirt. The color palette consists of earthy browns and creams. The setting is an upscale outdoor boutique area with warm afternoon sunlight. Clean, corporate yet relaxed visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByBCUAIa1aKKD4cyf-RiSoGhA1qFiq2aCMt86EW60tM9_3847SGTK66H43xvNmdXLKMe__KZ9U8pf8KW4JECrcfezby1GErCMckJm1fYis20uUdO9hwXsKFs9vlQj-cr5fWRpP_K1ClOJeS6vDCpx3ZO9pxPGE0Sycli-V0OnXwnlCitqUTiSKr1u1Y24I9l9VD2xwMMcFnSvT_Zu0aLrJUw5f7Scq_iS2jLam2dlHKKN211lqGVlNQe1-e1ny2SvZeXBtDHk-Kr15"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-md">
+<h3 class="text-white font-headline-md text-headline-md">Hombre</h3>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl shadow-md h-64 md:h-auto">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A diverse group of fashionably dressed people of various sizes, smiling and walking together. The focus is on the variety and quality of the clothing, emphasizing comfort and style for every body type. The scene is bright and joyful, with warm daylight and a premium minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTl6VWg-gmQC6QrrzxZeUHXyAbbJHScZ4vBgpWCzDq0OMRcg97IE8vp1t9efI4jsT5rhhZ-u3OJXWcfVFeaiuOAGCREwLiszjxj25rwCSDWIHQ7CvIxEUy2M0zuVIjjw8yDfOpFE2h6PQbs6VO3jI0FSZik-BFbVYX3TaJ1Fx4a8FQZbnDPpIL-DUe2zSaeFHYiAmpGK2AWBm52UfrxYikmlvlYUymE22eBCaPARIw3uZ6XNywA3LqahgIcCf00OTFUPeSAfons1Lm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-md">
+<h3 class="text-white font-headline-md text-headline-md">Talles Especiales</h3>
+<p class="text-white/80 font-body-md text-body-md">Curva completa hasta el 7XL.</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl shadow-md h-64 md:h-auto">
+<img alt="A stylish and minimalist display of high-quality shoes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA73syIKHKubrHyL1pQoPW5PHInNeBEqlLv41aBVlif8m1U4_cLB_uopxZrjO9RgiGFQ5IOLyjbuhW1cLqlMRlP0a9jcycqDkDIGd7ebfZk3dLpZP0SsRqWrbOU7pJ93sg4sU3WQHHmUcvInG5fojW9jY42qwlj3j4UVFF1QyVVDqyAMOTZ3aR5n4WRJGkGbDmjMUi1g4BSoxGV0VrH4_F5BKqDLq3ePLGRC_5U26QJEWP4FTZbXen3KsKmuXHE-4yIgiIFFSQEXSaM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-md">
+<h3 class="text-white font-headline-md text-headline-md">Calzado</h3>
+</div>
+</div><div class="relative group overflow-hidden rounded-xl shadow-md h-64 md:h-auto">
+<img alt="A curated selection of fashion accessories like belts, bags, and hats" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFyrqVAU5DrQm6kp-4gePXk8oakLfP01DThy39vJHhNy3JNSntnk13xkrWYo9DN1nEI6icmZ5OQXCUjinqLbFm5DIn0BLcueGICWmA602lqwzaFlyEgSwCVZP1eQNyR1qLZLHKanMWQ_jTNZxuq7MmjOsJMUjZh1zD-bQjetRJCn4z957x27eW_KdSMb8vEv45asK9pBcba82Fbu7D7ngLg_q0scIyVEWw9rfwj5IL4uVDEId2KB2yUlLuAH7soUeKnyt2659ZPLrS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-md">
+<h3 class="text-white font-headline-md text-headline-md">Accesorios</h3>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Size Range Banner -->
+<section class="bg-primary-container text-on-primary-fixed py-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="flex flex-col md:flex-row items-center justify-center gap-md">
+<span class="font-display-lg text-display-lg text-white">RN</span>
+<div class="h-px w-16 bg-white/30 hidden md:block"></div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-display-lg text-white max-w-2xl">
+                        Talles reales para personas reales hasta el 7XL
+                    </h2>
+<div class="h-px w-16 bg-white/30 hidden md:block"></div>
+<span class="font-display-lg text-display-lg text-white">7XL</span>
+</div>
+<p class="font-body-lg text-body-lg text-white/80 mt-sm">Sin vueltas, sin sorpresas. La moda que te queda bien.</p>
+</div>
+</section>
+<!-- Hours & Location -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-xl max-w-[1440px] mx-auto items-center">
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Visitá nuestro local</h2>
+<div class="space-y-sm">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<p class="font-headline-md text-headline-md">Gregorio Mayo 157</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Centro, Rawson (ex local Latiti)</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="font-headline-md text-headline-md">Horarios de Atención</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Lunes a Sábado: 10:00 - 14:00 | 17:00 - 21:30</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] rounded-2xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A stylized, minimalist map view of a clean urban street layout in Rawson, Argentina. The map features a soft cream and burgundy color palette, marking the location with a prominent boutique icon. The visual style is elegant and informative, aligning with the brand's sophisticated identity." data-location="Rawson, Argentina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Qw1qpTgeiP1MefXqMUXRlVqca2bEMtsjRgyjQPyznKo7LvcybkULTy2bNXRICKzLDAh4lw8tW88CNDNw73fb7qrcq8jzOwJ2ypei3IUschqAC898-HJNZi4jJlwRZUjVlcliHu4VFAZ-7svfOBMeyjqBNUZnODBcxylX9jIc1HigJQsHzCy9T_F2XwAIC0lttFx-GiX-hN1oAF1RdmscqXj4k8CdDfQmiyxjvl_QpbnmO5wjMzpMauncgT8hQsRti6FqzN9ON65g"/>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl bg-surface-container-high px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-2xl mx-auto space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Seguinos en redes</h2>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="flex items-center gap-xs px-md py-sm bg-white rounded-full shadow-sm hover:shadow-md transition-shadow" href="https://instagram.com/ropita_rawson" target="_blank">
+<span class="material-symbols-outlined text-primary" data-icon="camera">camera</span>
+<span class="font-body-md text-body-md">@ropita_rawson</span>
+</a>
+<a class="flex items-center gap-xs px-md py-sm bg-white rounded-full shadow-sm hover:shadow-md transition-shadow" href="https://facebook.com/elreino.delamiel.1" target="_blank">
+<span class="material-symbols-outlined text-primary" data-icon="public">public</span>
+<span class="font-body-md text-body-md">Facebook</span>
+</a>
+</div>
+<div class="pt-sm">
+<a class="inline-flex items-center gap-sm bg-primary-container text-white px-lg py-sm rounded-lg font-headline-md text-headline-md shadow-lg" href="https://wa.me/2804361510">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                        WhatsApp: 280-4361510
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest full-width border-t border-outline-variant flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-xl w-full gap-sm">
+<div class="font-display-lg text-primary">Ropita Rawson</div>
+<div class="flex flex-wrap gap-md justify-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Envíos</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Talles (RN a 7XL)</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Ubicación</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Términos</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+            © 2024 Ropita Rawson. Todos los derechos reservados. Rawson, Argentina.
+        </div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-lg flex justify-around items-center px-4 py-2 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-sm text-label-sm">Categorías</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label-sm text-label-sm">Carrito</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm">Contacto</span>
+</a>
+</nav>
+</body></html>
